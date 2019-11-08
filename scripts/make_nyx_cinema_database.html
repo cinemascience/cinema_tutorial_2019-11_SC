@@ -1,4 +1,22 @@
-<h1 id="export-a-cinema-database-from-paraview-5.7.0-using-the-nyx-tutorial-dataset">Export a Cinema Database from ParaView 5.7.0 using the Nyx Tutorial Dataset</h1>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>make_nyx_cinema_database</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="export-a-cinema-database-from-paraview-5.7-using-the-nyx-tutorial-dataset">Export a Cinema Database from ParaView 5.7 using the Nyx Tutorial Dataset</h1>
 <p>This tutorial uses a dataset from the open source Nyx cosmology simulation:</p>
 <p>A. S. Almgren, J. B. Bell, M.J. Lijewski, Z. Lukic, E. Van Andel, “Nyx: A Massively Parallel AMR Code for Computational Cosmology” Astrophysical Journal, 765, 39, 2013. https://amrex-astro.github.io/Nyx/index.html</p>
 <h2 id="workflow">Workflow</h2>
@@ -20,14 +38,11 @@ $ paraview --data=loadNyxDataset.pvsm</code></pre>
 <li>Click on the checkbox to establish these choices</li>
 <li>Click on the ellipsis menu to bring up the <strong>Save Screenshot Options</strong> menu</li>
 <li>Use <strong>Camera Model</strong> dropdown menu to select <strong>Phi-Theta</strong></li>
-<li>Back on the Export Inspector tab, under <strong>Root Directory</strong>, input the full path and name for the output Cinema database:</li>
 </ul>
-<pre><code>/home/in-situ-user/cinema_tutorial/cinema_compare/data/nyx.cdb</code></pre>
-<ul>
-<li>Check the <strong>Save Cinema D table</strong> checkbox</li>
-<li>Select <strong>File</strong> -&gt; <strong>Export Now</strong> to export the Cinema Database</li>
-</ul>
+<p>Select <strong>File</strong> -&gt; <strong>Export Now</strong> to export the Cinema Database</p>
 <h3 id="view-the-nyx.cdb-in-the-cinemacompare-viewer">View the nyx.cdb in the CinemaCompare viewer</h3>
 <p>Open CinemaCompare in Firefox:</p>
 <pre><code>firefox cinema_compare/cinema_compare.html</code></pre>
 <p>Use the sliders to explore the Nyx Cinema Database.</p>
+</body>
+</html>

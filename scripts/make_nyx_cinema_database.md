@@ -1,4 +1,4 @@
-# Export a Cinema Database from ParaView 5.7.0 using the Nyx Tutorial Dataset
+# Export a Cinema Database from ParaView 5.7 using the Nyx Tutorial Dataset
 
 This tutorial uses a dataset from the open source Nyx cosmology simulation:
 
@@ -32,14 +32,9 @@ RenderView1         Cinema image database (*.cdb)
 - Click on the checkbox to establish these choices
 - Click on the ellipsis menu to bring up the **Save Screenshot Options** menu
 - Use **Camera Model** dropdown menu to select **Phi-Theta**
-- Back on the Export Inspector tab, under **Root Directory**, input the full path and name for the output Cinema database:
 
-```
-/home/in-situ-user/cinema_tutorial/cinema_compare/data/nyx.cdb
-```
 
-- Check the **Save Cinema D table** checkbox
-- Select **File** -> **Export Now** to export the Cinema Database
+Select **File** -> **Export Now** to export the Cinema Database
 
 
 ### View the nyx.cdb in the CinemaCompare viewer
