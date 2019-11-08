@@ -1,0 +1,10 @@
+[
+	{
+		"name" : "Original nxySlice.cdb",
+		"directory" : "data/nyx/clean_slice.cdb"
+	},
+	{
+		"name" : "Finished Example nyxSlice",
+		"directory" : "data/nyx/nyxSlices_preFab.cdb"
+	}
+]
