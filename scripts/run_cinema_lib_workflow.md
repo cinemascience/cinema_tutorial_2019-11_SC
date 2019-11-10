@@ -7,7 +7,7 @@ In this example, we will use cinema_lib command line tools to find contours in s
 ### Setup cinema_lib command line tools
 
 ```
-$ cd ~/cinema_tutorial
+$ cd ~/cinema_tutorial/cinema_tutorial_2019-11_SC
 $ module load cinema
 $ cinema --help
 ```
@@ -15,7 +15,7 @@ $ cinema --help
 ### Check and validate the database (verbosely)
 
 ```
-$ cd ~/cinema_explorer/data
+$ cd ~/materials/data/nyx
 $ cinema -itvq -d nyxSlice.cdb
 ```
 
@@ -64,7 +64,7 @@ $ cinema -d nyxSlice.cdb --cv-contour-threshold 5 45
 
 Open CinemaCompare in Firefox:
 ```
-$ firefox ~/cinema_tutorial/cinema_explorer/cinema_explorer.html
+$ firefox ~/cinema_tutorial/cinema_tutorial_2019-11_SC/materials/cinema_explorer.html
 ```
 
 Use the parallel coordinates to select on the different parameters and explore the output database.   

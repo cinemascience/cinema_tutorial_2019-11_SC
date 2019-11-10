@@ -22,8 +22,8 @@
 <h2 id="workflow">Workflow</h2>
 <h3 id="setup-paraview-gui-with-the-dataset">Setup ParaView GUI with the dataset</h3>
 <p>Get to the cinema_tutorial directory; unload/load ParaView; open ParaView with the tutorial dataset:</p>
-<pre><code>$ cd ~/cinema_tutorial
-$ module unload paraview
+<pre><code>$ cd ~/cinema_tutorial/cinema_tutorial_2019-11_SC
+$ module unload paraview           (if needed)
 $ module load paraview/5.7.1
 $ paraview --data=loadNyxDataset.pvsm</code></pre>
 <p>In the <strong>Pipeline Browser</strong>, click to highlight <strong>nxy.pvd</strong></p>
@@ -42,7 +42,7 @@ $ paraview --data=loadNyxDataset.pvsm</code></pre>
 <p>Select <strong>File</strong> -&gt; <strong>Export Now</strong> to export the Cinema Database</p>
 <h3 id="view-the-nyx.cdb-in-the-cinemacompare-viewer">View the nyx.cdb in the CinemaCompare viewer</h3>
 <p>Open CinemaCompare in Firefox:</p>
-<pre><code>firefox cinema_compare/cinema_compare.html</code></pre>
+<pre><code>firefox materials/cinema_compare.html</code></pre>
 <p>Use the sliders to explore the Nyx Cinema Database.</p>
 </body>
 </html>

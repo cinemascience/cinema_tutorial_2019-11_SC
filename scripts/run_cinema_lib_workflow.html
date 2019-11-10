@@ -1,12 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>run_cinema_lib_workflow</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
 <h1 id="analyze-a-cinema-database-using-cinema_lib-command-line-tools">Analyze a Cinema database using cinema_lib command line tools</h1>
 <p>In this example, we will use cinema_lib command line tools to find contours in slices of Nyx data. These contours correspond to dark matter halos and connecting filaments.</p>
 <h2 id="workflow">Workflow</h2>
 <h3 id="setup-cinema_lib-command-line-tools">Setup cinema_lib command line tools</h3>
-<pre><code>$ cd ~/cinema_tutorial
+<pre><code>$ cd ~/cinema_tutorial/cinema_tutorial_2019-11_SC
 $ module load cinema
 $ cinema --help</code></pre>
 <h3 id="check-and-validate-the-database-verbosely">Check and validate the database (verbosely)</h3>
-<pre><code>$ cd ~/cinema_explorer/data
+<pre><code>$ cd ~/materials/data/nyx
 $ cinema -itvq -d nyxSlice.cdb</code></pre>
 <p>Take note of the column names (timestep, slice, FILE) and associated column numbers.</p>
 <h3 id="run-the-analysis-workflow">Run the analysis workflow</h3>
@@ -27,5 +45,7 @@ $ cinema -d nyxSlice.cdb --image-entropy 5</code></pre>
 $ cinema -d nyxSlice.cdb --cv-contour-threshold 5 45</code></pre>
 <h3 id="view-the-nyx.cdb-in-the-cinemaexplorer-viewer">View the nyx.cdb in the CinemaExplorer viewer</h3>
 <p>Open CinemaCompare in Firefox:</p>
-<pre><code>$ firefox ~/cinema_tutorial/cinema_explorer/cinema_explorer.html</code></pre>
+<pre><code>$ firefox ~/cinema_tutorial/cinema_tutorial_2019-11_SC/materials/cinema_explorer.html</code></pre>
 <p>Use the parallel coordinates to select on the different parameters and explore the output database.</p>
+</body>
+</html>

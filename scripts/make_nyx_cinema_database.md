@@ -11,8 +11,8 @@ A. S. Almgren, J. B. Bell, M.J. Lijewski, Z. Lukic, E. Van Andel, "Nyx: A Massiv
 Get to the cinema_tutorial directory; unload/load ParaView; open ParaView with the tutorial dataset:
 
 ```
-$ cd ~/cinema_tutorial
-$ module unload paraview
+$ cd ~/cinema_tutorial/cinema_tutorial_2019-11_SC
+$ module unload paraview           (if needed)
 $ module load paraview/5.7.1
 $ paraview --data=loadNyxDataset.pvsm
 ```
@@ -42,7 +42,7 @@ Select **File** -> **Export Now** to export the Cinema Database
 Open CinemaCompare in Firefox:
 
 ```
-firefox cinema_compare/cinema_compare.html
+firefox materials/cinema_compare.html
 ```
 
 Use the sliders to explore the Nyx Cinema Database.  
