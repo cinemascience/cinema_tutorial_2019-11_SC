@@ -15,7 +15,7 @@ $ cinema --help
 ### Check and validate the database (verbosely)
 
 ```
-$ cd ~/materials/data/nyx
+$ cd materials/data/nyx
 $ cinema -itvq -d nyxSlice.cdb
 ```
 
