@@ -42,12 +42,12 @@ Select **File** -> **Export Now** to export the Cinema Database
 Open CinemaCompare in Firefox:
 
 ```
-firefox materials/cinema_compare.html
+$ firefox materials/cinema_compare.html
 ```
 
 If you did not run the workflow, you can still look at an example database:
 ```
-firefox materials/example_compare.html
+$ firefox materials/example_compare.html
 ```
 
 Use the sliders to explore the Nyx Cinema Database.  
