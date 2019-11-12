@@ -34,7 +34,9 @@ RenderView1         Cinema image database (*.cdb)
 - Use **Camera Model** dropdown menu to select **Phi-Theta**
 
 
-Select **File** -> **Export Now** to export the Cinema Database
+Select **File** -> **Export Now** to export the Cinema Database.
+
+Note: the VM delay can make it difficult to see the progress of the Cinema database export.  Watch the **Time** counter at the top.  There are 5 timesteps (0 to 4).  When the timestep counter gets to four and the frame resets, the export will be finished.  
 
 
 ### View the nyx.cdb in the CinemaCompare viewer

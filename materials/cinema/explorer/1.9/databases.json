@@ -1,5 +1,9 @@
 [
 	{
+		"name" : "Output slices.cdb",
+		"directory" : "data/nyx/slices.cdb"
+	},
+	{
 		"name" : "Original slices.cdb",
 		"directory" : "data/nyx/clean_slice.cdb"
 	},
