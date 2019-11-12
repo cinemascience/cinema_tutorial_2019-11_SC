@@ -67,4 +67,4 @@ Open CinemaCompare in Firefox:
 $ firefox ~/cinema_tutorial/cinema_tutorial_2019-11_SC/materials/cinema_explorer.html
 ```
 
-Use the parallel coordinates to select on the different parameters and explore the output database.   
+Use the parallel coordinates to select on the different parameters and explore the output database.   The dropdown **Select Database** menu can be used to check the original database (before this workflow) and a finished database (after this workflow) to see if your output is as expected.  Be sure to click **Load** after selecting a specific database.
