@@ -7,7 +7,7 @@ In this example, we will use cinema_lib command line tools to find contours in s
 ### Setup cinema_lib command line tools
 
 ```
-$ cd ~/cinema_tutorial
+$ cd ~/cinema_tutorial/cinema_tutorial_2019-11_SC
 $ module load cinema
 $ cinema --help
 ```
@@ -15,8 +15,8 @@ $ cinema --help
 ### Check and validate the database (verbosely)
 
 ```
-$ cd ~/cinema_explorer/data
-$ cinema -itvq -d nyxSlice.cdb
+$ cd materials/data/nyx
+$ cinema -itvq -d slices.cdb
 ```
 
 Take note of the column names (timestep, slice, FILE) and associated column numbers.
@@ -35,13 +35,13 @@ timestep,slice,FILE
 First convert the database image to greyscale.  Note from validating the database that FILE has column=2:
 
 ```
-$ cinema -d nyxSlice.cdb --cv-grey 2
+$ cinema -d slices.cdb --cv-grey 2
 ```
 
 You can check the database column headers if you want.  Notice the added column with the greyscale image.
 
 ```
-$ cinema -i -d nyxSlice.cdb
+$ cinema -i -d slices.cdb
 ```
 
 Each command line directive adds an output column to the Cinema database, creating an updated data.csv.
@@ -49,22 +49,22 @@ Each command line directive adds an output column to the Cinema database, creati
 Now run a series of statistical calculations, each adding a column and moving the FILE column farther down:
 
 ```
-$ cinema -d nyxSlice.cdb --image-mean 3
-$ cinema -d nyxSlice.cdb --image-stddev 4
-$ cinema -d nyxSlice.cdb --image-entropy 5
+$ cinema -d slices.cdb --image-mean 3
+$ cinema -d slices.cdb --image-stddev 4
+$ cinema -d slices.cdb --image-entropy 5
 ```
 Now run the contour finding algorithm.  This takes two arguments: the column number of the FILE image and a contour threshold.  Run it twice to compare different thresholds:
 
 ```
-$ cinema -d nyxSlice.cdb --cv-contour-threshold 5 70
-$ cinema -d nyxSlice.cdb --cv-contour-threshold 5 45
+$ cinema -d slices.cdb --cv-contour-threshold 5 70
+$ cinema -d slices.cdb --cv-contour-threshold 5 45
 ```
 
 ### View the nyx.cdb in the CinemaExplorer viewer
 
 Open CinemaCompare in Firefox:
 ```
-$ firefox ~/cinema_tutorial/cinema_explorer/cinema_explorer.html
+$ firefox ~/cinema_tutorial/cinema_tutorial_2019-11_SC/materials/cinema_explorer.html
 ```
 
-Use the parallel coordinates to select on the different parameters and explore the output database.   
+Use the parallel coordinates to select on the different parameters and explore the output database.   The dropdown **Select Database** menu can be used to check the original database (before this workflow) and a finished database (after this workflow) to see if your output is as expected.  Be sure to click **Load** after selecting a specific database.

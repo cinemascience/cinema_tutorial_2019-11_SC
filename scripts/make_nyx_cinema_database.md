@@ -1,4 +1,4 @@
-# Export a Cinema Database from ParaView 5.7.0 using the Nyx Tutorial Dataset
+# Export a Cinema Database from ParaView 5.7 using the Nyx Tutorial Dataset
 
 This tutorial uses a dataset from the open source Nyx cosmology simulation:
 
@@ -11,8 +11,8 @@ A. S. Almgren, J. B. Bell, M.J. Lijewski, Z. Lukic, E. Van Andel, "Nyx: A Massiv
 Get to the cinema_tutorial directory; unload/load ParaView; open ParaView with the tutorial dataset:
 
 ```
-$ cd ~/cinema_tutorial
-$ module unload paraview
+$ cd ~/cinema_tutorial/cinema_tutorial_2019-11_SC
+$ module unload paraview           (if needed)
 $ module load paraview/5.7.1
 $ paraview --data=loadNyxDataset.pvsm
 ```
@@ -32,14 +32,11 @@ RenderView1         Cinema image database (*.cdb)
 - Click on the checkbox to establish these choices
 - Click on the ellipsis menu to bring up the **Save Screenshot Options** menu
 - Use **Camera Model** dropdown menu to select **Phi-Theta**
-- Back on the Export Inspector tab, under **Root Directory**, input the full path and name for the output Cinema database:
 
-```
-/home/in-situ-user/cinema_tutorial/cinema_compare/data/nyx.cdb
-```
 
-- Check the **Save Cinema D table** checkbox
-- Select **File** -> **Export Now** to export the Cinema Database
+Select **File** -> **Export Now** to export the Cinema Database.
+
+Note: the VM delay can make it difficult to see the progress of the Cinema database export.  Watch the **Time** counter at the top.  There are 5 timesteps (0 to 4).  When the timestep counter gets to four and the frame resets, the export will be finished.  
 
 
 ### View the nyx.cdb in the CinemaCompare viewer
@@ -47,7 +44,12 @@ RenderView1         Cinema image database (*.cdb)
 Open CinemaCompare in Firefox:
 
 ```
-firefox cinema_compare/cinema_compare.html
+$ firefox materials/cinema_compare.html
+```
+
+If you did not run the workflow, you can still look at an example database:
+```
+$ firefox materials/example_compare.html
 ```
 
 Use the sliders to explore the Nyx Cinema Database.  
